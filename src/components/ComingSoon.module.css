@@ -1,0 +1,126 @@
+.pageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #f0f4f9 0%, var(--white-color) 100%);
+    padding: 20px;
+}
+
+.contentCard {
+    background: var(--white-color);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 3rem 4rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid var(--primary-color);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.contentCard h1 {
+    font-size: 2.8rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.contentCard p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.contentCard h3 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.subscribeForm {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribeForm input {
+    flex-grow: 1;
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribeForm input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 103, 244, 0.2);
+}
+
+.submitButton {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevents text wrap */
+}
+
+.submitButton:hover {
+    background-color: #0056d1; /* Darker blue */
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 600px) {
+    .contentCard {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .contentCard h1 {
+        font-size: 2.2rem;
+    }
+
+    .contentCard p {
+        font-size: 1rem;
+    }
+
+    .subscribeForm {
+        flex-direction: column;
+    }
+
+    .submitButton {
+        width: 100%;
+    }
+}
