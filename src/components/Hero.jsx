@@ -1,15 +1,18 @@
 import React from 'react';
-
-function Hero() {
+import './Hero.css'; // <-- Import the CSS file
+const Hero = ({ content }) => {
   return (
-    <section id="hero" className="hero">
+    <section id="home">
       <div className="hero-content">
-        <h1>Crafting Digital Excellence from <span>Sri Lanka</span></h1>
-        <p>We are CEYCODEX. We build scalable, high-quality web and mobile applications tailored to your global business needs.</p>
-        <a href="#contact" className="cta-button">Get in Touch</a>
+        <h1>{content.title}</h1>
+        <p>{content.subtitle}</p>
+        <div className="button-group">
+          <a href="#contact" className="btn btn-primary">{content.primaryButton}</a>
+          <a href="#projects" className="btn btn-secondary">{content.secondaryButton}</a>
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
