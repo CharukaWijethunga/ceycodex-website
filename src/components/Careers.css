@@ -1,18 +1,13 @@
 /* Careers Section */
 #careers {
-  background: linear-gradient(180deg, #1a1a1a 0%, #0f0f0f 50%, #1a1a1a 100%);
+  /* (CHANGED) Off-white background */
+  background: #f9f9f9;
   position: relative;
 }
 
+/* (REMOVED) Dark mode glow */
 #careers::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-  pointer-events: none;
+  display: none;
 }
 
 .careers-intro {
@@ -29,17 +24,20 @@
 }
 
 .position-item {
-  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  /* (CHANGED) White card, subtle shadow */
+  background: #ffffff;
   margin-bottom: 1rem;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid #eeeeee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
   transition: all 0.3s ease;
 }
 
 .position-item:hover {
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* (CHANGED) Stronger shadow/border */
+  border-color: #dddddd;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
 }
 
 .position-header {
@@ -48,18 +46,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0%, rgba(100, 100, 100, 0.03) 100%);
+  /* (CHANGED) Plain white background */
+  background: #ffffff;
 }
 
 .position-title {
   font-size: 1.2rem;
-  color: #ffffff;
+  /* (CHANGED) Dark text */
+  color: #222222;
   font-weight: 600;
 }
 
 .toggle-icon {
   font-size: 1.5rem;
-  color: #888888;
+  color: #888888; /* Unchanged, still fine */
   transition: transform 0.3s ease;
 }
 
@@ -79,7 +79,8 @@
 
 .position-description {
   padding: 0 1.5rem 1.5rem;
-  color: #cccccc;
+  /* (CHANGED) Dark secondary text */
+  color: #666666;
   margin-bottom: 1rem;
 }
 

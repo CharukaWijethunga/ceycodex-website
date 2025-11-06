@@ -3,20 +3,23 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(90deg, rgba(26, 26, 26, 0.98) 0%, rgba(35, 35, 35, 0.95) 100%);
+  /* (CHANGED) Light, blurry background */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 245, 0.95) 100%);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  /* (CHANGED) Lighter shadow and border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #ffffff 0%, #d0d0d0 100%);
+  /* (CHANGED) Dark text gradient */
+  background: linear-gradient(135deg, #222222 0%, #555555 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -30,15 +33,17 @@ nav ul {
 }
 
 nav a {
-  color: #F0F0F0;
+  /* (CHANGED) Dark text */
+  color: #333333;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
   font-size: 0.95rem;
 }
 
 nav a:hover {
-  color: #cccccc;
-  text-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
+  /* (CHANGED) Darker text, remove shadow */
+  color: #000000;
+  text-shadow: none;
 }
 
 @media (max-width: 768px) {

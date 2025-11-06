@@ -23,7 +23,7 @@ export const servicesContent = {
   services: [
     {
       icon: "💻",
-      title: "Custom Software Development",
+      title: "Software Development",
       description: "Tailored software built from scratch to meet your unique business requirements, from backend to frontend.",
     },
     {
@@ -40,6 +40,16 @@ export const servicesContent = {
       icon: "🤖",
       title: "AI & Data Science",
       description: "Leverage the power of your data with machine learning models, predictive analytics, and intelligent automation.",
+    },
+    {
+      icon: "🛒", // Changed icon
+      title: "E-commerce", // Changed title
+      description: "We build powerful, scalable, and custom online stores using WordPress and WooCommerce, tailored to your business.", // Changed description
+    },
+    {
+      icon: "🔧",
+      title: "IT Support",
+      description: "Reliable, on-call IT support, network management, and cybersecurity services to keep your small business running smoothly.",
     },
   ],
 };
@@ -83,9 +93,10 @@ export const careersContent = {
     intro: "Explore our open roles and find your fit at Innovatech Solutions.",
     positions: [
         {
-            title: "No open positions at the moment",
-            description: "We are not hiring at the moment. Please check back later for updates on career opportunities.",
-           
+            title: "Software Engineer",
+            description: "Develop and maintain web applications using modern frameworks(.Net). Collaborate with cross-functional teams to deliver high-quality software solutions.",
+            location: "Remote",
+            type: "Full-time"
 
         },
        

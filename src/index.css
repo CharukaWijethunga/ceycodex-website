@@ -7,9 +7,9 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-  background-color: #f0f0f0;
-  color: #1a1a1a;
- 
+  /* (CHANGED) Light background, dark text */
+  background-color: #f9f9f9;
+  color: #222222;
   line-height: 1.6;
 }
 
@@ -18,7 +18,7 @@ main {
   margin-top: 60px;
 }
 
-/* Base Section Styling (Animation is handled by FadeInSection component) */
+/* Base Section Styling */
 section {
   padding: 5rem 2rem;
 }
@@ -31,7 +31,8 @@ section {
 
 .section-header h2 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #ffffff 0%, #d5d5d5 100%);
+  /* (CHANGED) Dark text gradient */
+  background: linear-gradient(135deg, #222222 0%, #444444 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -40,10 +41,11 @@ section {
 
 .section-header p {
   font-size: 1.1rem;
-  color: #999999;
+  /* (CHANGED) Darker secondary text */
+  color: #666666;
 }
 
-/* Keyframes */
+/* Keyframes (Unchanged) */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -78,9 +80,10 @@ section {
   font-weight: 600;
 }
 
+/* (INVERTED) Primary button is now dark */
 .btn-primary {
-  background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 100%);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -92,7 +95,8 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  /* (CHANGED) Lighter sheen for dark button */
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   transition: left 0.5s ease;
 }
 
@@ -101,15 +105,16 @@ section {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #e0e0e0 0%, #d0d0d0 100%);
+  background: linear-gradient(135deg, #444444 0%, #222222 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* (CHANGED) Secondary button is now light */
 .btn-secondary {
   background-color: transparent;
-  color: #888888;
-  border: 2px solid #888888;
+  color: #555555;
+  border: 2px solid #555555;
   position: relative;
   overflow: hidden;
 }
@@ -121,7 +126,7 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, #888888 50%, transparent);
+  background: linear-gradient(90deg, transparent, #555555 50%, transparent);
   transition: left 0.5s ease;
   z-index: -1;
 }
@@ -131,15 +136,16 @@ section {
 }
 
 .btn-secondary:hover {
-  background-color: #888888;
-  color: #1a1a1a;
+  background-color: #555555;
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(136, 136, 136, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* (INVERTED) Apply button is now dark */
 .btn-apply {
-  background: linear-gradient(135deg, #888888 0%, #707070 100%);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #555555 0%, #333333 100%);
+  color: #ffffff;
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 5px;
@@ -157,7 +163,7 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   transition: left 0.5s ease;
 }
 
@@ -166,16 +172,17 @@ section {
 }
 
 .btn-apply:hover {
-  background: linear-gradient(135deg, #bbbbbb 0%, #999999 100%);
+  background: linear-gradient(135deg, #666666 0%, #444444 100%);
   transform: translateX(3px);
-  box-shadow: 0 8px 20px rgba(136, 136, 136, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* (INVERTED) Submit button is now dark */
 .btn-submit {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 100%);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -193,7 +200,7 @@ section {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: left 0.5s ease;
 }
 
@@ -202,9 +209,9 @@ section {
 }
 
 .btn-submit:hover {
-  background: linear-gradient(135deg, #e0e0e0 0%, #d0d0d0 100%);
+  background: linear-gradient(135deg, #444444 0%, #222222 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Utility Classes */

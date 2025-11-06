@@ -1,6 +1,7 @@
 /* Hero Section */
 #home {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #252525 100%);
+  /* (CHANGED) Light background gradient */
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #e9e9e9 100%);
   min-height: calc(100vh - 60px);
   display: flex;
   align-items: center;
@@ -8,6 +9,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* (From previous step) Add perspective for 3D effect */
+  perspective: 1000px;
 }
 
 #home::before {
@@ -17,9 +20,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 20% 30%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
-    radial-gradient(ellipse at 80% 70%, rgba(150, 150, 150, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(100, 100, 100, 0.05) 0%, transparent 70%);
+  /* (CHANGED) Subtler glow, using dark spots */
+  background: radial-gradient(ellipse at 20% 30%, rgba(0, 0, 0, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse at 80% 70%, rgba(0, 0, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
   pointer-events: none;
   animation: gradientShift 15s ease infinite;
 }
@@ -33,17 +37,23 @@
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #c0c0c0 100%);
+  /* (CHANGED) Dark text gradient */
+  background: linear-gradient(135deg, #222222 0%, #444444 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 1.2;
+  /* (From previous step) Performance hint */
+  will-change: transform;
 }
 
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: #e0e0e0;
+  /* (CHANGED) Dark secondary text */
+  color: #555555;
+  /* (From previous step) Performance hint */
+  will-change: transform;
 }
 
 .button-group {
@@ -51,6 +61,8 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  /* (From previous step) Performance hint */
+  will-change: transform;
 }
 
 @media (max-width: 768px) {
@@ -72,7 +84,6 @@
   }
 
   .btn {
-    /* This rule from the media query targets .btn */
     width: 100%;
     max-width: 300px;
   }
