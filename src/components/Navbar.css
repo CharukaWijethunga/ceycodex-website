@@ -32,6 +32,26 @@ nav ul {
   gap: 2rem;
 }
 
+
+.last-letter {
+  /* 1. Unset the parent's gradient-fill behavior */
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+font-size: 1.5rem;
+  font-weight: 700;
+  /* 2. Make the text fill transparent */
+  -webkit-text-fill-color: transparent;
+
+  /* 3. Add the outline using -webkit-text-stroke */
+  -webkit-text-stroke-width: 1px; /* From your 'border-width' */
+  -webkit-text-stroke-color: #000000; /* From your 'border-color' */
+  
+  /* You can also use the shorthand: */
+  /* -webkit-text-stroke: 1px #ff6600; */
+}
+
+
 nav a {
   /* (CHANGED) Dark text */
   color: #333333;
@@ -64,3 +84,4 @@ nav a:hover {
     font-size: 0.85rem;
   }
 }
+
