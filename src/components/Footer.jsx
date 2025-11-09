@@ -21,12 +21,7 @@ const Footer = ({ content }) => {
             <a href={link.href} key={link.text}>{link.text}</a>
           ))}
         </div>
-        <div className="footer-section">
-          <h4>Legal</h4>
-          {content.legal.map((link) => (
-            <a href={link.href} key={link.text}>{link.text}</a>
-          ))}
-        </div>
+  
       </div>
       <div className="footer-bottom">
         <p>{content.copyright}</p>

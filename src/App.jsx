@@ -3,11 +3,13 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Projects from './components/Projects';
+import OP from './components/OP';
 import Team from './components/Team';
 import Careers from './components/Careers';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FadeInSection from './components/FadeInSection';
+
 
 // Import all content
 import {
@@ -17,6 +19,7 @@ import {
   projectsContent,
   teamContent,
   careersContent,
+  openSourceprojectsContent,
   contactContent,
   footerContent
 } from './content';
@@ -35,6 +38,9 @@ function App() {
         </FadeInSection>
         <FadeInSection>
           <Projects content={projectsContent} />
+        </FadeInSection>
+         <FadeInSection>
+          <OP content={openSourceprojectsContent} />
         </FadeInSection>
         <FadeInSection>
           <Team content={teamContent} />

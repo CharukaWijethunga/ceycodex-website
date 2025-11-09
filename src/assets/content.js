@@ -115,10 +115,6 @@ export const footerContent = {
         { text: "Projects", href: "#projects" },
         { text: "Team", href: "#team" }
     ],
-    legal: [
-        { text: "Privacy Policy", href: "#" },
-        { text: "Terms of Service", href: "#" },
-        { text: "Cookie Policy", href: "#" }
-    ],
+    
     copyright: "© 2025 ceycodex. All rights reserved."
 };
