@@ -27,7 +27,7 @@ const Hero = ({ content }) => {
   const typedSubtitle = useTypingEffect(content.subtitle, 0);
 
   return (
-    <section id="home" style={{ '--zen-pattern-url': `url(${ZenPatternUrl})` }}>
+    <section id="home">
       <div className="hero-content">
         {/* Title with cursor animation via CSS */}
         <h1 className="typing-text">{typedTitle}<span className="cursor">|</span></h1>
