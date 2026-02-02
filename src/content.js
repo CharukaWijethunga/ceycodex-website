@@ -104,21 +104,28 @@ export const teamContent = {
   { 
     avatar: "👨‍💻", 
     name: "Nuwanthika Waihenage", 
-    title: "Software Engineer", 
+    title: "Software Engineer(Part Time)", 
     quote: "\"I love taking complex requirements and turning them into simple, reliable experiences that users can trust every day.\"" 
   },
   { 
     avatar: "👨‍💻", 
     name: "Charith Nuwan", 
-    title: "Software Engineer", 
+    title: "Software Engineer(Part Time)", 
     quote: "\"My focus is clean code, thoughtful architecture, and small details that quietly make your product feel premium.\"" 
   },
+   
   { 
-    avatar: "👨‍💻", 
-    name: "Sathya Perera", 
-    title: "Intern", 
-    quote: "\"I'm here to learn fast, ship real features, and bring fresh energy to every project I work on.\"" 
-  },
+    avatar: "🎨", 
+    name: "Julian Vance", 
+    title: "UI/UX Designer", 
+    quote: "\"I bridge the gap between complex functionality and intuitive delight, ensuring every interaction feels intentional and every pixel serves a purpose.\"" 
+}
+  // { 
+  //   avatar: "👨‍💻", 
+  //   name: "Sathya Perera", 
+  //   title: "Intern", 
+  //   quote: "\"I'm here to learn fast, ship real features, and bring fresh energy to every project I work on.\"" 
+  // },
 
 ]
 };
@@ -128,13 +135,13 @@ export const careersContent = {
     subtitle: "Join a team that ships thoughtfully crafted software, not just tickets.",
     intro: "We’re building a calm, high‑trust environment for people who care about quality, learning, and meaningful work.",
     positions: [
-       {
-    "title": "UI/UX Designer",
-    "description": "Design intuitive, clean interfaces for web and mobile. You’ll move from low‑fi flows to polished prototypes and work closely with engineers to make sure the final product feels as good as it looks.",
-    "location": "Remote",
-    "type": "Full-time"
-}
        
+        {
+            "title": "WordPress Developer",
+            "description": "Develop high-performance, custom WordPress themes and plugins. You value clean architecture and site speed over heavy page builders, ensuring every site is as scalable and secure as it is beautiful.",
+            "location": "Remote",
+            "type": "Full-time"
+        }
     ]
 };
 
