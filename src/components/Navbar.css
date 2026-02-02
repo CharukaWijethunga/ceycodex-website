@@ -3,67 +3,96 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  /* (CHANGED) Light, blurry background */
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 245, 0.95) 100%);
-  padding: 1rem 2rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 249, 250, 0.98) 100%);
+  padding: 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  /* (CHANGED) Lighter shadow and border */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.12);
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  /* (CHANGED) Dark text gradient */
-  background: linear-gradient(135deg, #222222 0%, #555555 100%);
+  background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-teal) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-decoration: none;
+  letter-spacing: -0.5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  text-shadow: none;
+  transform: scale(1.05);
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
-
 .last-letter {
-  /* 1. Unset the parent's gradient-fill behavior */
   background: none;
   -webkit-background-clip: initial;
   background-clip: initial;
-font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  /* 2. Make the text fill transparent */
   -webkit-text-fill-color: transparent;
-
-  /* 3. Add the outline using -webkit-text-stroke */
-  -webkit-text-stroke-width: 1px; /* From your 'border-width' */
-  -webkit-text-stroke-color: #000000; /* From your 'border-color' */
-  
-  /* You can also use the shorthand: */
-  /* -webkit-text-stroke: 1px #ff6600; */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--accent-cyan);
 }
 
-
 nav a {
-  /* (CHANGED) Dark text */
-  color: #333333;
+  color: var(--text-primary);
   text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 0.95rem;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
+  transition: width 0.3s ease;
+  box-shadow: none;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border: 1px solid rgba(0, 217, 255, 0);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 
 nav a:hover {
-  /* (CHANGED) Darker text, remove shadow */
-  color: #000000;
-  text-shadow: none;
+  color: var(--accent-cyan);
+  transform: translateY(-2px);
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:hover::after {
+  border-color: rgba(0, 217, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.2), inset 0 0 10px rgba(0, 217, 255, 0.1);
 }
 
 @media (max-width: 768px) {

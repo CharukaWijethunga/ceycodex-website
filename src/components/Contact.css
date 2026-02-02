@@ -1,11 +1,9 @@
 /* Contact Section */
 #contact {
-  /* (CHANGED) White background */
-  background: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
 }
 
-/* (REMOVED) Dark mode glow */
 #contact::before {
   display: none;
 }
@@ -13,40 +11,50 @@
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
-  /* (CHANGED) Dark text */
-  color: #333333;
-  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.8rem;
-  /* (CHANGED) Light inputs */
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  color: #222222;
+  padding: 1rem;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  color: var(--text-primary);
   font-family: inherit;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.95rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-secondary);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  /* (CHANGED) Light focus state */
-  border-color: #555555;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-color: var(--accent-cyan);
+  background-color: rgba(6, 182, 212, 0.08);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.1), 0 0 12px rgba(6, 182, 212, 0.15);
 }
 
 .form-group textarea {

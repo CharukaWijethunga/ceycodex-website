@@ -1,11 +1,9 @@
 /* Careers Section */
 #careers {
-  /* (CHANGED) Off-white background */
-  background: #f9f9f9;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
 }
 
-/* (REMOVED) Dark mode glow */
 #careers::before {
   display: none;
 }
@@ -19,48 +17,48 @@
 }
 
 .positions-list {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .position-item {
-  /* (CHANGED) White card, subtle shadow */
-  background: #ffffff;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #eeeeee;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
 }
 
 .position-item:hover {
-  /* (CHANGED) Stronger shadow/border */
-  border-color: #dddddd;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border-color: rgba(6, 182, 212, 0.35);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.1);
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8ecf1 100%);
+  transform: translateY(-4px);
 }
 
 .position-header {
-  padding: 1.5rem;
+  padding: 2rem;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* (CHANGED) Plain white background */
-  background: #ffffff;
+  background: transparent;
 }
 
 .position-title {
-  font-size: 1.2rem;
-  /* (CHANGED) Dark text */
-  color: #222222;
-  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 .toggle-icon {
   font-size: 1.5rem;
-  color: #888888; /* Unchanged, still fine */
+  color: #667eea;
   transition: transform 0.3s ease;
+  font-weight: 700;
 }
 
 .toggle-icon.open {
@@ -74,18 +72,18 @@
 }
 
 .position-content.open {
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .position-description {
-  padding: 0 1.5rem 1.5rem;
-  /* (CHANGED) Dark secondary text */
-  color: #666666;
+  padding: 0 2rem 1rem;
+  color: var(--text-secondary);
   margin-bottom: 1rem;
+  line-height: 1.8;
 }
 
 .position-footer {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 2rem 1.5rem;
   display: flex;
   gap: 1rem;
 }

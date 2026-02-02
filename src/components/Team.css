@@ -1,68 +1,80 @@
 /* Team Section */
 #team {
-  /* (CHANGED) White background */
-  background: #ffffff;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
 }
 
-/* (REMOVED) Dark mode glow */
 #team::before {
   display: none;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .team-card {
-  /* (CHANGED) White card with shadow */
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
   text-align: center;
-  border: 1px solid #eeeeee;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
-/* (REMOVED) Dark mode sheen */
 .team-card::before {
-  display: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.1) 0%, rgba(131, 56, 236, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 16px;
 }
 
 .team-card:hover {
-  /* (CHANGED) Stronger shadow on hover */
-  background: #ffffff;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8ecf1 100%);
   transform: translateY(-8px);
-  border-color: #dddddd;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 12px 24px rgba(6, 182, 212, 0.12);
 }
 
 .team-card:hover::before {
-  top: -100%; /* Hides it */
+  opacity: 1;
+}
+
+.team-card:hover::before {
+  top: -100%;
 }
 
 .team-avatar {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  /* (CHANGED) Light background for avatar */
-  background: linear-gradient(135deg, #e0e0e0 0%, #f9f9f9 50%, #e0e0e0 100%);
-  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+  margin: 0 auto 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  color: #444444;
+  font-size: 2.5rem;
+  color: var(--accent-cyan);
   position: relative;
-  /* (CHANGED) Lighter shadow */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.12);
+  border: 2px solid rgba(0, 217, 255, 0.3);
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover .team-avatar {
+  box-shadow: 0 8px 16px rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.5);
 }
 
 .team-avatar::after {
@@ -73,27 +85,27 @@
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  /* (CHANGED) Lighter sheen */
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4) 0%, transparent 50%);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
 }
 
 .team-card h3 {
-  font-size: 1.3rem;
-  /* (CHANGED) Dark text */
-  color: #222222;
-  margin-bottom: 0.3rem;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  font-weight: 700;
 }
 
 .team-title {
-  /* (CHANGED) Dark secondary text */
-  color: #555555;
-  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  font-size: 0.95rem;
   margin-bottom: 1rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .team-card p {
-  /* (CHANGED) Dark secondary text */
-  color: #666666;
+  color: var(--text-secondary);
   font-size: 0.9rem;
+  line-height: 1.8;
 }

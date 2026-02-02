@@ -1,56 +1,57 @@
-/* Projects Section */
-#projects {
-  background: #f9f9f9;
+/* Open Projects Section */
+#open-projects {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
 }
 
-#projects::before {
+#open-projects::before {
   display: none;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .project-card {
-  background: #ffffff;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
   overflow: hidden;
-  transition: all 0.3s ease;
-  border: 1px solid #eeeeee;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   position: relative;
-  /* (NEW) Make flex column to position button at bottom */
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(10px);
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  border-color: #dddddd;
+  box-shadow: 0 12px 24px rgba(6, 182, 212, 0.12);
+  border-color: rgba(6, 182, 212, 0.4);
+  background: linear-gradient(135deg, #f0f4f8 0%, #e8ecf1 100%);
 }
 
 .project-card:hover::after {
   opacity: 0;
 }
 
-/* (NEW) Style for the icon/logo */
 .project-icon {
   width: 100%;
-  height: 150px;
-  background: linear-gradient(135deg, #e0e0e0 0%, #f0f0f0 50%, #e0e0e0 100%);
+  height: 160px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(124, 58, 237, 0.08) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  color: #444;
+  color: var(--accent-cyan);
   position: relative;
+  border-bottom: 1px solid rgba(6, 182, 212, 0.2);
 }
 
 .project-icon::before {
@@ -64,40 +65,43 @@
 }
 
 .project-content {
-  padding: 1.5rem;
-  /* (NEW) Make content grow to fill space */
+  padding: 2rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
 .project-content h3 {
-  font-size: 1.3rem;
-  color: #222222;
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #1a1a2e;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
 }
 
 .project-summary {
   font-size: 0.95rem;
-  color: #666666;
-  margin-bottom: 1rem;
-  /* (NEW) Make summary grow */
+  color: #4a5568;
+  margin-bottom: 1.5rem;
   flex-grow: 1;
+  line-height: 1.8;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem; /* (NEW) Add margin-bottom */
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
 }
 
 .tag {
-  background-color: #eeeeee;
-  color: #555555;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  color: #667eea;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
   border: 1px solid #dddddd;
 }
 

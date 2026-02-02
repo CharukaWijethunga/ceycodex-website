@@ -1,5 +1,6 @@
 import React from 'react';
 import './Services.css'; // <-- Import the CSS file
+
 const Services = ({ content }) => {
   return (
     <section id="services">
@@ -11,7 +12,10 @@ const Services = ({ content }) => {
         <div className="services-grid">
           {content.services.map((service) => (
             <div className="service-card" key={service.title}>
-              <div className="service-icon">{service.icon}</div>
+              {/* CHANGE: Replaced text/emoji with an <img> tag */}
+              <div className="service-icon">
+                <img src={service.iconUrl} alt={service.title} /> 
+              </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>

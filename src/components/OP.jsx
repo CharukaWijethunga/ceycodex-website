@@ -1,9 +1,9 @@
 import React from 'react';
 import './OP.css'; // <-- Import the CSS file
 
-const Projects = ({ content }) => {
+const OpenSourceProjects = ({ content }) => {
   return (
-    <section id="projects">
+    <section id="open-source">
       <div className="container">
         <div className="section-header">
           <h2>{content.title}</h2>
@@ -45,4 +45,4 @@ const Projects = ({ content }) => {
   );
 };
 
-export default Projects;
+export default OpenSourceProjects;
