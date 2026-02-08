@@ -58,7 +58,7 @@ export const servicesContent = {
         "Automate repetitive tasks like customer follow-ups, report generation, data entry, and scheduling. Save time and reduce manual errors.",
     },
     {
-      iconUrl: ecommerceIcon, 
+      iconUrl: ecommerceIcon,
       title: "Online Storefronts",
       description:
         "Launch your online store with integrated payment processing, inventory management, and customer analytics. We handle the technical side so you focus on selling.",
@@ -73,153 +73,153 @@ export const servicesContent = {
 };
 
 export const projectsContent = {
-    title: "Success stories from businesses like yours",
-    subtitle: "See how we've helped small and growing businesses go digital and increase their revenue.",
-    projects: [
-  {
-    "imageText": "Encro marketplace interface mockup",
-    "title": "Encro – niche e‑commerce for sewing machine accessories",
-    "summary": "We helped Encro launch a focused marketplace for sewing machine accessories with clear navigation, fast search, and an ordering flow tuned for repeat customers.",
-    "tags": ["Wordpress", "Php", "WooCommerce"]
-  },
-  {
-    "imageText": "Lynkr social profiles aggregation app UI",
-    "title": "Lynkr – your unified social link",
-    "summary": "Lynkr brings all of your profiles into a single, shareable link with a clean, mobile‑first interface and real‑time updates.",
-    "tags": ["React", "Vite", "Firebase"]
-  }
-]
+  title: "Success stories from businesses like yours",
+  subtitle: "See how we've helped small and growing businesses go digital and increase their revenue.",
+  projects: [
+    {
+      "imageText": "Encro marketplace interface mockup",
+      "title": "Encro – niche e‑commerce for sewing machine accessories",
+      "summary": "We helped Encro launch a focused marketplace for sewing machine accessories with clear navigation, fast search, and an ordering flow tuned for repeat customers.",
+      "tags": ["Wordpress", "Php", "WooCommerce"]
+    },
+    {
+      "imageText": "Lynkr social profiles aggregation app UI",
+      "title": "Lynkr – your unified social link",
+      "summary": "Lynkr brings all of your profiles into a single, shareable link with a clean, mobile‑first interface and real‑time updates.",
+      "tags": ["React", "Vite", "Firebase"]
+    }
+  ]
 };
 
 export const teamContent = {
-    title: "The team behind CeyCodeX",
-    subtitle: "A small, focused group of engineers and creatives who care about craft.",
-    members: [
-  { 
-    avatar: "👨‍💻", 
-    name: "Charuka Wijethunga", 
-    title: "Founder", 
-    quote: "\"I started CeyCodeX to build software that feels calm, considered, and genuinely useful. I still write code and shape every product we ship.\"" 
-  },
-  { 
-    avatar: "👨‍💻", 
-    name: "Nuwanthika Waihenage", 
-    title: "Software Engineer(Part Time)", 
-    quote: "\"I love taking complex requirements and turning them into simple, reliable experiences that users can trust every day.\"" 
-  },
-  { 
-    avatar: "👨‍💻", 
-    name: "Charith Nuwan", 
-    title: "Software Engineer(Part Time)", 
-    quote: "\"My focus is clean code, thoughtful architecture, and small details that quietly make your product feel premium.\"" 
-  },
-   
-  { 
-    avatar: "🎨", 
-    name: "Julian Vance", 
-    title: "UI/UX Designer", 
-    quote: "\"I bridge the gap between complex functionality and intuitive delight, ensuring every interaction feels intentional and every pixel serves a purpose.\"" 
-}
-  // { 
-  //   avatar: "👨‍💻", 
-  //   name: "Sathya Perera", 
-  //   title: "Intern", 
-  //   quote: "\"I'm here to learn fast, ship real features, and bring fresh energy to every project I work on.\"" 
-  // },
+  title: "The team behind CeyCodeX",
+  subtitle: "A small, focused group of engineers and creatives who care about craft.",
+  members: [
+    {
+      avatar: "👨‍💻",
+      name: "Charuka Wijethunga",
+      title: "Founder",
+      quote: "\"I started CeyCodeX to build software that feels calm, considered, and genuinely useful. I still write code and shape every product we ship.\""
+    },
+    //   { 
+    //     avatar: "👨‍💻", 
+    //     name: "Nuwanthika Waihenage", 
+    //     title: "Software Engineer(Part Time)", 
+    //     quote: "\"I love taking complex requirements and turning them into simple, reliable experiences that users can trust every day.\"" 
+    //   },
+    //   { 
+    //     avatar: "👨‍💻", 
+    //     name: "Charith Nuwan", 
+    //     title: "Software Engineer(Part Time)", 
+    //     quote: "\"My focus is clean code, thoughtful architecture, and small details that quietly make your product feel premium.\"" 
+    //   },
 
-]
+    //   { 
+    //     avatar: "🎨", 
+    //     name: "Julian Vance", 
+    //     title: "UI/UX Designer", 
+    //     quote: "\"I bridge the gap between complex functionality and intuitive delight, ensuring every interaction feels intentional and every pixel serves a purpose.\"" 
+    // }
+    // { 
+    //   avatar: "👨‍💻", 
+    //   name: "Sathya Perera", 
+    //   title: "Intern", 
+    //   quote: "\"I'm here to learn fast, ship real features, and bring fresh energy to every project I work on.\"" 
+    // },
+
+  ]
 };
 
 export const careersContent = {
-    title: "Careers at CeyCodeX",
-    subtitle: "Join a team that ships thoughtfully crafted software, not just tickets.",
-    intro: "We’re building a calm, high‑trust environment for people who care about quality, learning, and meaningful work.",
-    positions: [
-       
-        {
-            "title": "WordPress Developer",
-            "description": "Develop high-performance, custom WordPress themes and plugins. You value clean architecture and site speed over heavy page builders, ensuring every site is as scalable and secure as it is beautiful.",
-            "location": "Remote",
-            "type": "Full-time"
-        }
-    ]
+  title: "Careers at CeyCodeX",
+  subtitle: "Join a team that ships thoughtfully crafted software, not just tickets.",
+  intro: "We’re building a calm, high‑trust environment for people who care about quality, learning, and meaningful work.",
+  positions: [
+
+    {
+      "title": "WordPress Developer",
+      "description": "Develop high-performance, custom WordPress themes and plugins. You value clean architecture and site speed over heavy page builders, ensuring every site is as scalable and secure as it is beautiful.",
+      "location": "Remote",
+      "type": "Full-time"
+    }
+  ]
 };
 
 export const openSourceprojectsContent = {
   title: "Open source & community",
   subtitle: "We learn from the open‑source world every day, so we’re committed to giving back.",
   contributions: [
-   {
-  "projectName": "QuietCanvas",
-  "projectIcon": "🧘",
-  "summary": "QuietCanvas is a distraction‑free meditation and journaling space, built in the open with a focus on calm interactions and accessible design.",
-  "tags": ["Meditation", "OpenSource", "Community"],
-  "githubUrl": "https://github.com/CeyCodeX/QuietCanvas"
-}
-   
+    {
+      "projectName": "QuietCanvas",
+      "projectIcon": "🧘",
+      "summary": "QuietCanvas is a distraction‑free meditation and journaling space, built in the open with a focus on calm interactions and accessible design.",
+      "tags": ["Meditation", "OpenSource", "Community"],
+      "githubUrl": "https://github.com/CeyCodeX/QuietCanvas"
+    }
+
   ]
 };
 
 export const contactContent = {
-    title: "Ready to go digital? Let's talk.",
-    subtitle: "Tell us about your business and what you'd like to achieve. We'll give you honest advice and a clear plan forward. No obligation, just real conversation.",
+  title: "Ready to go digital? Let's talk.",
+  subtitle: "Tell us about your business and what you'd like to achieve. We'll give you honest advice and a clear plan forward. No obligation, just real conversation.",
 };
 
 export const footerContent = {
-    brand: "CeyCodeX",
-    tagline: "Affordable digital solutions for small businesses ready to grow.",
-    socials: [
-        { title: "LinkedIn", icon: "in", href: "https://linkedin.com/company/ceycodex" },
-        { title: "Twitter", icon: "𝕏", href: "https://twitter.com/ceycodex" },
-        { title: "GitHub", icon: "⚙️", href: "https://github.com/ceycodex" }
-    ],
-    sections: [
-        {
-            title: "Company",
-            links: [
-                { text: "About Us", href: "#about" },
-                { text: "Services", href: "#services" },
-                { text: "Projects", href: "#projects" },
-                { text: "Blog", href: "#blog" },
-                { text: "Careers", href: "#careers" }
-            ]
-        },
-        {
-            title: "Solutions",
-            links: [
-                { text: "Web Application Development", href: "#services" },
-                { text: "Mobile App Development", href: "#services" },
-                { text: "Cloud Infrastructure", href: "#services" },
-                { text: "AI & Machine Learning", href: "#services" },
-                { text: "E-commerce Solutions", href: "#services" }
-            ]
-        },
-        {
-            title: "Resources",
-            links: [
-                { text: "Documentation", href: "#" },
-                { text: "Case Studies", href: "#projects" },
-                { text: "Technology Stack", href: "#" },
-                { text: "Open Source", href: "#open-source" },
-                { text: "Developer Guide", href: "#" }
-            ]
-        },
-        {
-            title: "Legal",
-            links: [
-                { text: "Privacy Policy", href: "#" },
-                { text: "Terms of Service", href: "#" },
-                { text: "Cookie Policy", href: "#" },
-                { text: "Disclaimer", href: "#" }
-            ]
-        }
-    ],
-    cta: {
-        title: "Let's grow your business together",
-        description: "Get special rates on digitalization projects. Call us for a free consultation.",
-        button: "Schedule a free call"
+  brand: "CeyCodeX",
+  tagline: "Affordable digital solutions for small businesses ready to grow.",
+  socials: [
+    { title: "LinkedIn", icon: "in", href: "https://linkedin.com/company/ceycodex" },
+    { title: "Twitter", icon: "𝕏", href: "https://twitter.com/ceycodex" },
+    { title: "GitHub", icon: "⚙️", href: "https://github.com/ceycodex" }
+  ],
+  sections: [
+    {
+      title: "Company",
+      links: [
+        { text: "About Us", href: "#about" },
+        { text: "Services", href: "#services" },
+        { text: "Projects", href: "#projects" },
+        { text: "Blog", href: "#blog" },
+        { text: "Careers", href: "#careers" }
+      ]
     },
-    copyright: "© 2025 CeyCodeX. Affordable Digital Solutions for Growing Businesses. All rights reserved.",
-    location: "Sri Lanka",
-    email: "hello@ceycodex.com"
+    {
+      title: "Solutions",
+      links: [
+        { text: "Web Application Development", href: "#services" },
+        { text: "Mobile App Development", href: "#services" },
+        { text: "Cloud Infrastructure", href: "#services" },
+        { text: "AI & Machine Learning", href: "#services" },
+        { text: "E-commerce Solutions", href: "#services" }
+      ]
+    },
+    {
+      title: "Resources",
+      links: [
+        { text: "Documentation", href: "#" },
+        { text: "Case Studies", href: "#projects" },
+        { text: "Technology Stack", href: "#" },
+        { text: "Open Source", href: "#open-source" },
+        { text: "Developer Guide", href: "#" }
+      ]
+    },
+    {
+      title: "Legal",
+      links: [
+        { text: "Privacy Policy", href: "#" },
+        { text: "Terms of Service", href: "#" },
+        { text: "Cookie Policy", href: "#" },
+        { text: "Disclaimer", href: "#" }
+      ]
+    }
+  ],
+  cta: {
+    title: "Let's grow your business together",
+    description: "Get special rates on digitalization projects. Call us for a free consultation.",
+    button: "Schedule a free call"
+  },
+  copyright: "© 2025 CeyCodeX. Affordable Digital Solutions for Growing Businesses. All rights reserved.",
+  location: "Sri Lanka",
+  email: "hello@ceycodex.com"
 };
