@@ -9,6 +9,7 @@ import Careers from './components/Careers';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FadeInSection from './components/FadeInSection';
+import PrivacyPolicyFinkeep from './components/PrivacyPolicyFinkeep';
 
 
 // Import all content
@@ -25,6 +26,13 @@ import {
 } from './content';
 
 function App() {
+  const normalizedPath = window.location.pathname.replace(/\/+$/, '') || '/';
+  const isFinkeepPrivacyPage = normalizedPath === '/privacypolicy/finkeep';
+
+  if (isFinkeepPrivacyPage) {
+    return <PrivacyPolicyFinkeep />;
+  }
+
   return (
     <>
       <Navbar content={navigation} />
